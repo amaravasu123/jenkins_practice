@@ -1,1 +1,1 @@
-pipeline{
+echo "hello world"
