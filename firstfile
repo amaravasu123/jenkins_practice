@@ -1,2 +1,13 @@
-echo "hello world"
-echo "hello trip"
+pipeline{
+    agent any
+    stages{
+        stage("Git checkout"){
+            steps{
+               git branch: 'main', credentialsId: 'github', url: 'https://github.com/amaravasu123/jenkins_practice'
+
+
+            }
+
+        }
+    }
+}
